@@ -1,6 +1,6 @@
 {
   "name": "microservice-1",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "M1 microservice for test",
   "main": "main.ts",
   "scripts": {
