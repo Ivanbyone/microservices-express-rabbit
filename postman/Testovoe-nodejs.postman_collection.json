@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "6475fcc1-319b-4c30-a9e4-0e1390214276",
+		"name": "Testovoe-nodejs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29130538"
+	},
+	"item": [
+		{
+			"name": "Post-query-m1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"value\": \"6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/v1/doubled-value",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"doubled-value"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
