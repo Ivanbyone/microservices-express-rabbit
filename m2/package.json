@@ -1,6 +1,6 @@
 {
   "name": "m2",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "M2 microservice",
   "main": "main.ts",
   "scripts": {
