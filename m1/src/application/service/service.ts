@@ -39,9 +39,24 @@ export class Service implements IService {
         }
 
         const message: Message = new Message(inputValue);
-        // Пайплайн для отправки сообщения в очередь и получения ответа
-        await this._rabbit.connect();
-        await this._rabbit.sendMessage(JSON.stringify(message));
-        return new OutputDto(inputValue);
+
+        // отправка сообщения в очередь и получение ответа
+        let response: string;
+
+        try {
+            response = await this._rabbit.sendMessageAndListen(
+                JSON.stringify(message),
+            );
+        } catch (err) {
+            throw new Error("Internal server error");
+        }
+
+        if (response === null) {
+            throw new BadRequest("Returned null value");
+        }
+
+        const output = parseInt(response);
+
+        return new OutputDto(output);
     }
 }
