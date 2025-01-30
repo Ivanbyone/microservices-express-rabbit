@@ -1,0 +1,32 @@
+{
+  "name": "m2",
+  "version": "0.1.0",
+  "description": "M2 microservice",
+  "main": "main.ts",
+  "scripts": {
+    "start:dev": "NODE_ENV=development debug=* ts-node-dev ./src/main.ts",
+    "pr:lint": "prettier --config .prettierrc.json -l \"src/**/*.ts\" --ignore-unknown .",
+    "pr:fix": "prettier --config .prettierrc.json --write \"src/**/*.ts\"",
+    "test": "test"
+  },
+  "author": "Ivanbyone",
+  "license": "MIT",
+  "dependencies": {
+    "amqplib": "^0.10.5",
+    "dotenv": "^16.4.7",
+    "inversify": "^6.2.1",
+    "log4js": "^6.9.1",
+    "prettier": "^3.4.2",
+    "reflect-metadata": "^0.2.2"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.6",
+    "@types/express": "^5.0.0",
+    "@types/inversify": "^2.0.33",
+    "@types/log4js": "^2.3.5",
+    "@types/node": "^22.12.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.3"
+  }
+}

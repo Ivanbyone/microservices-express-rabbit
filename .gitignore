@@ -1,12 +1,16 @@
 .DS_Store
 m1/DS_Store
+m2/DS_Store
 
 # Environment secrets
 .env 
 m1/.env
+m2/.env
 
 # npm
 m1/node_modules
+m2/node_modules
 
 # logs
 m1/log/dev-logs.log
+m2/log/dev-logs.log
