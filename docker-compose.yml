@@ -29,6 +29,17 @@ services:
     networks:
       - app-network
 
+  m2:
+    container_name: m2-microservice
+    build:  m2/.
+    restart: unless-stopped
+    env_file:
+      - m2/.env
+    depends_on:
+      - rabbitmq
+    networks:
+      - app-network
+
 networks:
   app-network:
     driver: bridge

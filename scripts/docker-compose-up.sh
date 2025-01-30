@@ -9,6 +9,10 @@ chmod +x scripts/testing.sh
 scripts/testing.sh
 
 cd ..
+cd m2
+
+chmod +x scripts/lint-and-fix.sh
+scripts/lint-and-fix.sh
 
 docker-compose up -d
 
