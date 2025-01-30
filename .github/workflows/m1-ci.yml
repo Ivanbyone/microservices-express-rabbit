@@ -28,3 +28,8 @@ jobs:
       - name: Lint code
         working-directory: m1
         run: npm run pr:lint
+
+      - name: Testing 
+        working-directory: m1
+        run: npm run test
+
