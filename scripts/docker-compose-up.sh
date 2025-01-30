@@ -14,6 +14,8 @@ cd m2
 chmod +x scripts/lint-and-fix.sh
 scripts/lint-and-fix.sh
 
+cd ..
+
 docker-compose up -d
 
 # Запуск скрипта
